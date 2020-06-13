@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading;
-using Rubeus.lib.Interop;
+using TDNite.lib.Interop;
 
-namespace Rubeus
+namespace TDNite
 {
     public class Harvest
     {

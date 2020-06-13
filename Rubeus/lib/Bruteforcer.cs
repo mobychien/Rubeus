@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Rubeus
+namespace TDNite
 {
 
     public interface IBruteforcerReporter

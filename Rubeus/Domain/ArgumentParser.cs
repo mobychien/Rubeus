@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace Rubeus.Domain
+namespace TDNite.Domain
 {
     public static class ArgumentParser
     {

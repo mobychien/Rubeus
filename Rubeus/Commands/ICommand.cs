@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Rubeus.Commands
+namespace TDNite.Commands
 {
     public interface ICommand
     {

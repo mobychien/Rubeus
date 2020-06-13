@@ -2,21 +2,21 @@
 using System.IO;
 using System.Linq;
 using Asn1;
-using Rubeus.lib.Interop;
+using TDNite.lib.Interop;
 
 
-namespace Rubeus
+namespace TDNite
 {
 
-    public class RubeusException : Exception
+    public class TDNiteException : Exception
     {
-        public RubeusException(string message)
+        public TDNiteException(string message)
             : base(message)
         {
         }
     }
 
-    public class KerberosErrorException : RubeusException
+    public class KerberosErrorException : TDNiteException
     {
         public KRB_ERROR krbError;
 
@@ -40,7 +40,7 @@ namespace Rubeus
                 KRB_ERROR error = ex.krbError;
                 Console.WriteLine("\r\n[X] KRB-ERROR ({0}) : {1}\r\n", error.error_code, (Interop.KERBEROS_ERROR)error.error_code);
             }
-            catch (RubeusException ex)
+            catch (TDNiteException ex)
             {
                 Console.WriteLine("\r\n" + ex.Message + "\r\n");
             }
@@ -64,7 +64,7 @@ namespace Rubeus
             string dcIP = Networking.GetDCIP(domainController, false);
             if (String.IsNullOrEmpty(dcIP))
             {
-                throw new RubeusException("[X] Unable to get domain controller address");
+                throw new TDNiteException("[X] Unable to get domain controller address");
             }
 
             if (verbose)
@@ -77,7 +77,7 @@ namespace Rubeus
             byte[] response = Networking.SendBytes(dcIP, 88, reqBytes);
             if (response == null)
             {
-                throw new RubeusException("[X] No answer from domain controller");
+                throw new TDNiteException("[X] No answer from domain controller");
             }
 
             // decode the supplied bytes to an AsnElt object
@@ -126,7 +126,7 @@ namespace Rubeus
                 }
                 else
                 {
-                    throw new RubeusException("[X] Encryption type \"" + etype + "\" not currently supported");
+                    throw new TDNiteException("[X] Encryption type \"" + etype + "\" not currently supported");
                 }
 
 
@@ -187,7 +187,7 @@ namespace Rubeus
 
                     Console.WriteLine("[*] base64(ticket.kirbi):\r\n", kirbiString);
 
-                    if (Rubeus.Program.wrapTickets)
+                    if (TDNite.Program.wrapTickets)
                     {
                         // display the .kirbi base64, columns of 80 chararacters
                         foreach (string line in Helpers.Split(kirbiString, 80))
@@ -235,7 +235,7 @@ namespace Rubeus
             }
             else
             {
-                throw new RubeusException("[X] Unknown application tag: " + responseTag);
+                throw new TDNiteException("[X] Unknown application tag: " + responseTag);
             }
         }
 
@@ -374,7 +374,7 @@ namespace Rubeus
                 {
                     Console.WriteLine("[*] base64(ticket.kirbi):\r\n", kirbiString);
 
-                    if (Rubeus.Program.wrapTickets)
+                    if (TDNite.Program.wrapTickets)
                     {
                         // display the .kirbi base64, columns of 80 chararacters
                         foreach (string line in Helpers.Split(kirbiString, 80))

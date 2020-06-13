@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
-namespace Rubeus
+namespace TDNite
 {
     //AS-REQ          ::= [APPLICATION 10] KDC-REQ
 

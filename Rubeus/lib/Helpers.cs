@@ -6,9 +6,9 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Security.Principal;
 using System.Text.RegularExpressions;
-using Rubeus.lib.Interop;
+using TDNite.lib.Interop;
 
-namespace Rubeus
+namespace TDNite
 {
     public class Helpers
     {

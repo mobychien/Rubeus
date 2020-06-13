@@ -3,7 +3,7 @@ using Asn1;
 using System.Text;
 using System.Collections.Generic;
 
-namespace Rubeus
+namespace TDNite
 {
     public class EncryptionKey
     {

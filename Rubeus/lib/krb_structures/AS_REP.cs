@@ -2,7 +2,7 @@
 using System;
 using System.Text;
 
-namespace Rubeus
+namespace TDNite
 {
     public class AS_REP
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using Asn1;
 
-namespace Rubeus
+namespace TDNite
 {
     /* PA-PAC-OPTIONS ::= SEQUENCE {
         KerberosFlags

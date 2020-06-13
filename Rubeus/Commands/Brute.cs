@@ -10,7 +10,7 @@ using System.Text.RegularExpressions;
 using Microsoft.Win32;
 
 
-namespace Rubeus.Commands
+namespace TDNite.Commands
 {
     public class Brute : ICommand
     {
@@ -67,7 +67,7 @@ namespace Rubeus.Commands
             {
                 Console.WriteLine("\r\n" + ex.Message + "\r\n");
             }
-            catch (RubeusException ex)
+            catch (TDNiteException ex)
             {
                 Console.WriteLine("\r\n" + ex.Message + "\r\n");
             }
@@ -420,7 +420,7 @@ namespace Rubeus.Commands
             Console.WriteLine("[*] base64({0}.kirbi):\r\n", ticketname);
 
             // display in columns of 80 chararacters
-            if (Rubeus.Program.wrapTickets)
+            if (TDNite.Program.wrapTickets)
             {
                 foreach (string line in Helpers.Split(ticketB64, 80))
                 {

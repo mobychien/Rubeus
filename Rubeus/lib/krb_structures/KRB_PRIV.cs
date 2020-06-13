@@ -2,7 +2,7 @@
 using Asn1;
 using System.Collections.Generic;
 
-namespace Rubeus
+namespace TDNite
 {
     public class KRB_PRIV
     {

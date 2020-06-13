@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Rubeus.Commands;
+using TDNite.Commands;
 
-namespace Rubeus.Domain
+namespace TDNite.Domain
 {
     public class CommandCollection
     {

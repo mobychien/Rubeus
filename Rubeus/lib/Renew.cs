@@ -2,10 +2,10 @@
 using System.IO;
 using System.Linq;
 using Asn1;
-using Rubeus.lib.Interop;
+using TDNite.lib.Interop;
 
 
-namespace Rubeus
+namespace TDNite
 {
     public class Renew
     {
@@ -154,7 +154,7 @@ namespace Rubeus
                 if (display)
                 {
                     Console.WriteLine("[*] base64(ticket.kirbi):\r\n", kirbiString);
-                    if (Rubeus.Program.wrapTickets)
+                    if (TDNite.Program.wrapTickets)
                     {
                         // display the .kirbi base64, columns of 80 chararacters
                         foreach (string line in Helpers.Split(kirbiString, 80))

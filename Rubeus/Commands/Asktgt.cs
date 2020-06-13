@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using Rubeus.lib.Interop;
+using TDNite.lib.Interop;
 
 
-namespace Rubeus.Commands
+namespace TDNite.Commands
 {
     public class Asktgt : ICommand
     {

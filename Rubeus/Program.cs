@@ -1,9 +1,9 @@
-﻿using Rubeus.Domain;
+﻿using TDNite.Domain;
 using System;
 using System.Collections.Generic;
 using System.IO;
 
-namespace Rubeus
+namespace TDNite
 {
     public class Program
     {
@@ -50,7 +50,7 @@ namespace Rubeus
             }
             catch (Exception e)
             {
-                Console.WriteLine("\r\n[!] Unhandled Rubeus exception:\r\n");
+                Console.WriteLine("\r\n[!] Unhandled TDNite exception:\r\n");
                 Console.WriteLine(e);
             }
         }

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace Rubeus.lib.Interop
+namespace TDNite.lib.Interop
 {
     public class NtException : Exception
     {
@@ -20,7 +20,7 @@ namespace Rubeus.lib.Interop
 
         private static string GetErrorMessage(int errorCode)
         {
-            if (Rubeus.Interop.LsaNtStatusToWinError((uint)errorCode) == ERROR_MR_MID_NOT_FOUND)
+            if (TDNite.Interop.LsaNtStatusToWinError((uint)errorCode) == ERROR_MR_MID_NOT_FOUND)
             {
                 return $"NTSTAUTS error code 0x{errorCode.ToString("X")}";
             }

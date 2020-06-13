@@ -3,7 +3,7 @@ using System.IO;
 using System.Linq;
 using Asn1;
 
-namespace Rubeus
+namespace TDNite
 {
     public class Reset
     {

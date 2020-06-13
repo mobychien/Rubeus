@@ -2,7 +2,7 @@
 using System;
 using System.Text;
 
-namespace Rubeus
+namespace TDNite
 {
      //KERB-PA-PAC-REQUEST ::= SEQUENCE { 
      //    include-pac[0] BOOLEAN --If TRUE, and no pac present, include PAC.

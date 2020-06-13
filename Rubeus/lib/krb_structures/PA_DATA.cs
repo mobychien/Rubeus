@@ -2,7 +2,7 @@
 using Asn1;
 using System.IO;
 
-namespace Rubeus
+namespace TDNite
 {
     public class PA_DATA
     {

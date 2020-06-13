@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Rubeus
+namespace TDNite
 {
     //PrincipalName::= SEQUENCE {
     //        name-type[0] Int32,

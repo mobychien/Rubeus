@@ -4,7 +4,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace Rubeus.lib.Interop
+namespace TDNite.lib.Interop
 {
     [StructLayout(LayoutKind.Sequential)]
     public struct LUID

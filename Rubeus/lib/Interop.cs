@@ -3,10 +3,10 @@ using Asn1;
 using System.Text;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
-using Rubeus.lib.Interop;
+using TDNite.lib.Interop;
 
 
-namespace Rubeus
+namespace TDNite
 {
     public class Interop
     {

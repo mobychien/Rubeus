@@ -2,7 +2,7 @@
 using System;
 using System.Text;
 
-namespace Rubeus
+namespace TDNite
 {
     //PA-ENC-TS-ENC   ::= SEQUENCE {
     //        patimestamp[0]               KerberosTime, -- client's time

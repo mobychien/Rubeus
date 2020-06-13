@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using Rubeus.lib.Interop;
+using TDNite.lib.Interop;
 
 
-namespace Rubeus.Commands
+namespace TDNite.Commands
 {
     public class Tgssub : ICommand
     {

@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
-namespace Rubeus
+namespace TDNite
 {
     //AP-REQ          ::= [APPLICATION 14] SEQUENCE {
     //        pvno            [0] INTEGER (5),

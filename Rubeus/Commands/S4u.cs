@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 
-namespace Rubeus.Commands
+namespace TDNite.Commands
 {
     public class S4u : ICommand
     {

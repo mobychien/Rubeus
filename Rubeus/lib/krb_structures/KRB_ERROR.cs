@@ -3,7 +3,7 @@ using Asn1;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Rubeus
+namespace TDNite
 {
     public class KRB_ERROR
     {

@@ -3,7 +3,7 @@ using Asn1;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Rubeus
+namespace TDNite
 {
     //EncKrbPrivPart  ::= [APPLICATION 28] SEQUENCE {
     //        user-data       [0] OCTET STRING,

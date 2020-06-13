@@ -8,7 +8,7 @@ using System.DirectoryServices;
 using System.DirectoryServices.AccountManagement;
 using System.Collections.Generic;
 
-namespace Rubeus
+namespace TDNite
 {
     public class Roast
     {
@@ -273,7 +273,7 @@ namespace Rubeus
                     Console.WriteLine("[*] AS-REP hash:\r\n");
 
                     // display the base64 of a hash, columns of 80 chararacters
-                    if (Rubeus.Program.wrapTickets)
+                    if (TDNite.Program.wrapTickets)
                     {
                         foreach (string line in Helpers.Split(hashString, 80))
                         {
@@ -785,7 +785,7 @@ namespace Rubeus
                                         }
                                         else
                                         {
-                                            if (Rubeus.Program.wrapTickets)
+                                            if (TDNite.Program.wrapTickets)
                                             {
                                                 bool header = false;
                                                 foreach (string line in Helpers.Split(hash, 80))
@@ -887,7 +887,7 @@ namespace Rubeus
             else
             {
                 bool header = false;
-                if (Rubeus.Program.wrapTickets) 
+                if (TDNite.Program.wrapTickets) 
                 {
                     foreach (string line in Helpers.Split(hash, 80))
                     {

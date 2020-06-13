@@ -2,7 +2,7 @@
 using Asn1;
 using System.Collections.Generic;
 
-namespace Rubeus
+namespace TDNite
 {
     //EncKrbCredPart  ::= [APPLICATION 29] SEQUENCE {
     //        ticket-info     [0] SEQUENCE OF KrbCredInfo,

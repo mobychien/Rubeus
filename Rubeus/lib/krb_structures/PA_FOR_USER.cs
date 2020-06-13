@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Rubeus
+namespace TDNite
 {
     //PA-FOR-USER-ENC ::= SEQUENCE {
 	   // userName[0] PrincipalName,

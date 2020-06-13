@@ -8,10 +8,10 @@ using System.Security.AccessControl;
 using Microsoft.Win32;
 using ConsoleTables;
 using System.Security.Principal;
-using Rubeus.lib.Interop;
+using TDNite.lib.Interop;
 
 
-namespace Rubeus
+namespace TDNite
 {
     public class LSA
     {
@@ -549,7 +549,7 @@ namespace Rubeus
                 Console.WriteLine("{0}Flags                 :  {1}", indent, flags);
                 Console.WriteLine("{0}Base64EncodedTicket   :\r\n", indent);
 
-                if (Rubeus.Program.wrapTickets)
+                if (TDNite.Program.wrapTickets)
                 {
                     foreach (var line in Helpers.Split(base64ticket, 100))
                     {
@@ -579,7 +579,7 @@ namespace Rubeus
                 {
                     // if we're displaying the base64 encoding of the ticket
                     Console.WriteLine("{0}Base64EncodedTicket   :\r\n", indent);
-                    if (Rubeus.Program.wrapTickets)
+                    if (TDNite.Program.wrapTickets)
                     {
                         foreach (var line in Helpers.Split(base64ticket, 100))
                         {
@@ -1233,7 +1233,7 @@ namespace Rubeus
                                                             {
                                                                 Console.WriteLine("[*] base64(ticket.kirbi):\r\n", kirbiString);
 
-                                                                if (Rubeus.Program.wrapTickets)
+                                                                if (TDNite.Program.wrapTickets)
                                                                 {
                                                                     // display the .kirbi base64, columns of 80 chararacters
                                                                     foreach (var line in Helpers.Split(kirbiString, 80))

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Rubeus.Domain
+namespace TDNite.Domain
 {
     public class ArgumentParserResult
     {

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using System.ComponentModel;
 
-namespace Rubeus
+namespace TDNite
 {
     public class Crypto
     {
